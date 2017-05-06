@@ -1,0 +1,20 @@
+body {
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.sub {
+	display: flex;
+	justify-content: space-between;
+}
+
+.noted {
+	background-color: deeppink;
+	width: 20%;
+	border: 8px solid black;
+	border-radius: 10px;
+	text-align: center;
+}

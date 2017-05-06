@@ -2,15 +2,15 @@
 <h3>Post Your DanganRonpa Note</h3>
 <ul>
   <% data.forEach(function(d) { %>
-    <li data-id=<%=d.id%>>
+    <div class="noted"><li data-id=<%=d.id%>>
     <input  class="input_item" type="text" name="name" 
         placeholder="<%= d.name %>" readonly >
         <input  class="input_item" type="text" name="game" 
         placeholder="<%= d.game %>" readonly >
       <input  class="input_item" type="text" name="post" 
         placeholder="<%= d.post %>" readonly >
-      <span class="edit">edit</span>
-      <span class="delete">delete</span>
-    </li> 
+    <button class="edit">Edit</button>
+	<button class="delete">Delete</button>
+    </li></div> 
    <% }) %>
 </ul>

@@ -4,6 +4,7 @@ $('.delete').on('click', function() {
   let id = $(this).parent().attr('data-id')
   axios.delete("http://localhost:4000/notes/"+id)
   $(this).parent().remove();
+  location.reload();
 })
 
 $('.edit').on('click',function() {
@@ -20,4 +21,5 @@ $('.input_item').on('change',function() {
   }).catch(function (err) {
        return next(err);
      });
+  location.reload();
 })
