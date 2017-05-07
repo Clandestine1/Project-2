@@ -7,11 +7,6 @@ body {
 	width: 100%;
 }
 
-.nav-wrapper {
-	background-color: gold;
-	margin-top: -1%;
-}
-
 #but {
 	position: absolute;
 	bottom: 10%;

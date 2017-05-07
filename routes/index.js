@@ -7,7 +7,7 @@ router.get('/chat', function(req, res, next){
   res.render('chat');
 });
 
-module.exports = function(io) {
+/*module.exports = function(io) {
     var app = require('express');
     var router = app.Router();
 
@@ -41,9 +41,7 @@ router.get('/about', function(req, res, next){
 	res.render('about')
 });
 
-router.get('/people', function(req, res, next){
-	res.json('people')
-});
+
 
 router.get('/people/:id', db.getOneCharacter);
 router.get('/people', db.getAllCharacters);
