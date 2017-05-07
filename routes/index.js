@@ -7,6 +7,10 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/trivia', function(req, res, next){
+	res.render('trivia')
+});
+
 router.get('/people/:id', db.getOneCharacter);
 router.get('/people', db.getAllCharacters);
 router.get('/notes', db.getAllContacts);

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  <!--<img id="background" src="./images/dr3.jpg">-->
+    <div class="wrapper">
+         <h1>Danganronpa Trivia</h1>
+
+        <div class="ask"></div>
+        <ul class="makeChoice"></ul>
+        <div class="comments"></div>
+        <div class="outcomes"></div>
+        <button class="advance">Proceed</button>
+        <br>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script type="text/javascript">
+
+//Array of objects which hold trivia trivia, trivia answer choices and the correct answer
+var trivia = [{
+    ask: "Who believes that despair is the stepping stone for hope?",
+    choices: ["Hajime", "Kyoko", "Sakura", "Nagito"],
+    right: 3 
+}, {
+    ask: "Byakuya is the heir to which major company?",
+    choices: ["Togami Industries", "Togami Corporation", " Super Togami", "BT inc."],
+    right: 1
+}, {
+    ask: "What real game was played during chapter 2 of Danganronpa Goodbye Despair?",
+    choices: ["Super Mario Bros", "Twilight Syndrome Murder Case", "Ultra Despair Girls", "Final Fantasy 7"],
+    right: 1
+}, {
+    ask: "Who becomes the successor to Junko is Danganronpa Another Episode?",
+    choices: ["Monaca", "Nagisa", "Kurokuma", "Kotoko"],
+    right: 0
+}, {
+    ask: "What is the name of the computer program Chihiro created during the killing game?",
+    choices: ["AI", "Chi Chat", " Alter Ego", "Kuma"],
+    right: 2
+}, {
+    ask: "Who was inflicted with gullible despair disease during chapter 3 of Danganronpa Goodbye Despair?",
+    choices: ["Nagito", "Hiyoko", "Mikan", "Ibuki"],
+    right: 3
+}, {
+    ask: "What title was Makoto granted at the end of Danganronpa Trigger Happy Havoc?",
+    choices: ["Ultimate Protagonist", "Ultimate Average Guy", "Ultimate Despair", "Ultimate Hope"],
+    right: 3
+}, {
+    ask: "Who do the Warriors of Hope loathe?",
+    choices: ["Kids", "Adults", " Hope", "Despair"],
+    right: 1
+}, {
+    ask: "How many Deva's of Destruction does Gundham Tanaka own?",
+    choices: ["Two", "Seven", "Four", "Zero"],
+    right: 2
+}, {
+    ask: "Who does Kiyotaka form an unlikely bromance with?",
+    choices: ["Mondo", "Hifumi", "Yasuhiro", "Makoto"],
+    right: 0
+}];
+
+
+// Sets current ask and current score to 0. Sets the game end to false which means the game is still in play
+var oneQuestion = 0;
+var correctAnswers = 0;
+var endQuiz = false;
+
+$(document).ready(function () {
+
+    //displays one ask from ask array 
+    displayoneQuestion();
+    $(this).find(".comments").hide();
+
+    //advances to next ask in trivia array
+    $(this).find(".advance").on("click", function () {
+        if (!endQuiz) {
+
+        //makes answer choices radio button so only one choice can be picked
+            value = $("input[type='radio']:checked").val();
+
+        
+                if (value == trivia[oneQuestion].correctAnswer) {
+                    correctAnswers++;
+                }
+
+                oneQuestion++;
+
+                if (oneQuestion < trivia.length) {
+                    displayoneQuestion();
+                } else {
+                    showScores();
+                    //                    $(document).find(".advance").toggle();
+                    //                    $(document).find(".playAgainButton").toggle();
+                    // Change the text in the next button to ask if user wants to play again
+                    $(document).find(".advance").text("Play Again?");
+                    endQuiz = true;
+                }
+            
+        } else { // quiz is over and clicked the next button (which now displays 'Play Again?'
+            endQuiz = false;
+            $(document).find(".advance").text("Retry?");
+            resetQuiz();
+            displayoneQuestion();
+            hiddenScores();
+        }
+    });
+
+});
+
+// This displays the current ask AND the choices
+function displayoneQuestion() {
+
+    var ask = trivia[oneQuestion].ask;
+    var askClass = $(document).find(".wrapper > .ask");
+    var makeChoice = $(document).find(".wrapper > .makeChoice");
+    var shauna = trivia[oneQuestion].choices.length;
+
+    // Set the askClass text to the current ask
+    $(askClass).text(ask);
+
+    // Remove all current <li> elements (if any)
+    $(makeChoice).find("li").remove();
+
+    var choice;
+    for (i = 0; i < shauna; i++) {
+        choice = trivia[oneQuestion].choices[i];
+        $('<li><input type="radio" value=' + i + ' name="dynradio" />' + choice + '</li>').appendTo(makeChoice);
+    }
+}
+
+function resetQuiz() {
+    oneQuestion = 0;
+    correctAnswers = 0;
+    hiddenScores();
+}
+
+function showScores() {
+    $(document).find(".wrapper > .outcomes").text("You scored " + correctAnswers + " out of " + '10');
+    $(document).find(".wrapper > .outcomes").show();
+}
+
+function hiddenScores() {
+    $(document).find(".outcomes").hide();
+}
+   </script>
+</body>
+</html>
