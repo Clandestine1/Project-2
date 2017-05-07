@@ -8,9 +8,20 @@
 
   </head>
 
+	<img id="background2" src="./images/dr5.jpg">
   <img id="background" src="./images/load.gif">
 
 <a href="../about"><button id="but">Start Game</button></a>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#but").on("mouseover", function () {
+ 			$("#background").hide();
+    		$("#background2").show();
+	});
+});
+</script>
 
   <body>
  

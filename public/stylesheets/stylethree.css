@@ -1,13 +1,37 @@
 body {
 	margin: 0;
+	font-family: cry;
+	text-shadow: 2px 1px black;
+	font-size: 44px;
+}
+
+ @font-face {
+  font-family: "grunge";
+    src: url("../fonts/grunge.ttf")
+}
+
+ @font-face {
+  font-family: "cry";
+    src: url("../fonts/cry.ttf")
+}
+
+ @font-face {
+  font-family: "wonderland";
+    src: url("../fonts/wonderland.ttf")
 }
 
 li {
 	list-style-type: none;
 }
 
+h1 {
+	font-family: grunge;
+	text-shadow: 3px 4px gold;
+	font-size: 64px;
+}
+
 #background {
-position: relative;
+position: fixed;
 z-index: -4;
 width: 100%;
 }
@@ -34,19 +58,23 @@ width: 100%;
 }
 
 .ask {
-	color: red;
-	font-size: 30px;
 	text-align: center;
 	font-weight: bolder;
+	color: gold;
+	font-family: wonderland;
+	text-shadow: 2px 3px black;
+	font-size: 54px;
 }
 
 
 
 .makeChoice {
-	color: purple;
-	font-size: 24px;
+	color: black;
+	font-family: cry;
+	font-size: 34px;
 	text-align: center;
 	font-weight: bold;
+	text-shadow: 2px 2px gold;
 }
 
 
@@ -73,7 +101,6 @@ background-color: #E5D230;
 
 .nav-wrapper {
 	background-color: gold;
-	margin-top: -1%;
 }
 
 a {

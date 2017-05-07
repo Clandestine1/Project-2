@@ -7,10 +7,26 @@ body {
 	width: 100%;
 }
 
+#background2 {
+	width: 100%;
+	display: none;
+	filter: grayscale(80%);
+}
+
+
 #but {
 	position: absolute;
-	bottom: 10%;
+	bottom: 18%;
 	left: 46%;
+	background-color: #E00D4A;
+	color: lightgray;
+	border-radius: 8px;
+	border: none;
+}
+
+#but:hover {
+	background-color: black;
+	color: #E00D4A;
 }
 
 a {
