@@ -2,10 +2,24 @@
 <html>
   <head>
     <title></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/stylethree.css'/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
   </head>
   <body>
-  <!--<img id="background" src="./images/dr3.jpg">-->
+
+ <nav>
+    <div class="nav-wrapper">
+      <div>
+        <a href="http://localhost:4000/">Characters</a>
+        <a href="http://localhost:4000/notes">Notes</a>
+        <a href="http://localhost:4000/trivia">Trivia</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <img id="background" src="./images/dr2.jpg">
+
     <div class="wrapper">
          <h1>Danganronpa Trivia</h1>
 
@@ -14,8 +28,10 @@
         <div class="comments"></div>
         <div class="outcomes"></div>
         <button class="advance">Proceed</button>
-        <br>
     </div>
+    
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    <script type="text/javascript">
 
@@ -65,7 +81,7 @@ var trivia = [{
 
 // Sets current ask and current score to 0. Sets the game end to false which means the game is still in play
 var oneQuestion = 0;
-var correctAnswers = 0;
+var correct = 0;
 var endQuiz = false;
 
 $(document).ready(function () {
@@ -81,9 +97,8 @@ $(document).ready(function () {
         //makes answer choices radio button so only one choice can be picked
             value = $("input[type='radio']:checked").val();
 
-        
                 if (value == trivia[oneQuestion].correctAnswer) {
-                    correctAnswers++;
+                    correct++;
                 }
 
                 oneQuestion++;
@@ -92,16 +107,14 @@ $(document).ready(function () {
                     displayoneQuestion();
                 } else {
                     showScores();
-                    //                    $(document).find(".advance").toggle();
-                    //                    $(document).find(".playAgainButton").toggle();
-                    // Change the text in the next button to ask if user wants to play again
-                    $(document).find(".advance").text("Play Again?");
+            
+                    $(document).find(".advance").text("Retry?");
                     endQuiz = true;
                 }
             
-        } else { // quiz is over and clicked the next button (which now displays 'Play Again?'
+        } else {
             endQuiz = false;
-            $(document).find(".advance").text("Retry?");
+            $(document).find(".advance").text("Proceed");
             resetQuiz();
             displayoneQuestion();
             hiddenScores();
@@ -110,7 +123,7 @@ $(document).ready(function () {
 
 });
 
-// This displays the current ask AND the choices
+
 function displayoneQuestion() {
 
     var ask = trivia[oneQuestion].ask;
@@ -118,27 +131,25 @@ function displayoneQuestion() {
     var makeChoice = $(document).find(".wrapper > .makeChoice");
     var shauna = trivia[oneQuestion].choices.length;
 
-    // Set the askClass text to the current ask
     $(askClass).text(ask);
 
-    // Remove all current <li> elements (if any)
     $(makeChoice).find("li").remove();
 
     var choice;
     for (i = 0; i < shauna; i++) {
         choice = trivia[oneQuestion].choices[i];
-        $('<li><input type="radio" value=' + i + ' name="dynradio" />' + choice + '</li>').appendTo(makeChoice);
+        $('<li><input type="radio" value=' + i + ' name="radio" />' + choice + '</li>').appendTo(makeChoice);
     }
 }
 
 function resetQuiz() {
     oneQuestion = 0;
-    correctAnswers = 0;
+    correct = 0;
     hiddenScores();
 }
 
 function showScores() {
-    $(document).find(".wrapper > .outcomes").text("You scored " + correctAnswers + " out of " + '10');
+    $(document).find(".wrapper > .outcomes").text("Correct Answers: Nagito, Togami Corporation, Twilight Syndrome Murder Case, Monaca, Alter Ego, Ibuki, Ultimate Hope, Adults, Four, Mondo");
     $(document).find(".wrapper > .outcomes").show();
 }
 
@@ -146,5 +157,12 @@ function hiddenScores() {
     $(document).find(".outcomes").hide();
 }
    </script>
+
 </body>
+
+
+   <audio autoplay>
+    <source src="../music/musicdr2.mp3" type="audio/mp3">
+</audio>
+
 </html>

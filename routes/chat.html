@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font: 16px }
+      form { background: deeppink; padding: 4px; position: fixed; bottom: 0; width: 100%; }
+      form input { border: 2px solid black; padding: 10px; width: 90%; margin-right: .5%; }
+      form button { width: 9%; background: lightgray; border: none; padding: 10px; }
+      #im { list-style-type: none; margin: 0; padding: 0; }
+      #im li { padding: 4px 12px; background-color: lightgray; }
+      #im li:nth-child(odd) { background: deeppink; }
+    </style>
+    <script src="/socket.io/socket.io.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+<script>
+  $(function () {
+    var socket = io();
+    $('form').submit(function(){
+      socket.emit('chat', $('#text').val());
+      $('#text').val('');
+      return false;
+    });
+    socket.on('chat', function(msg){
+      $('#im').append($('<li>').text(msg));
+    });
+  });
+</script>
+  </head>
+  <body>
+    <ul id="im"></ul>
+    <form action="">
+      <input id="text" /><button>Send</button>
+    </form>
+  </body>
+</html>
+    

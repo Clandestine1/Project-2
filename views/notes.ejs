@@ -7,7 +7,20 @@
 
   </head>
   <body>
+
+   <nav>
+    <div class="nav-wrapper">
+      <div>
+        <a href="http://localhost:4000/">Characters</a>
+        <a href="http://localhost:4000/notes">Notes</a>
+        <a href="http://localhost:4000/trivia">Trivia</a>
+      </div>
+    </div>
+  </nav>
     
+   <span id="logo">Boss Shauna  &#9734; Danganronpa Sōsu</span>
+<img class="responsive-img" id="background" src="./images/dr4.png">
+
     <form class="center-align" id="forming" method="POST">
         <input type="text" name="name" placeholder="name">
         <input type="text" name="game" placeholder="game">
@@ -21,5 +34,9 @@
 
 
   <% include ./partials/scripts %>
+
+  <audio autoplay>
+    <source src="../music/musicdr1.mp3" type="audio/mp3">
+</audio>
   </body>
 </html>

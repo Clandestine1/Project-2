@@ -12,10 +12,9 @@ getOneCharacter = (req,res,next) => {
   db.one('SELECT * FROM posts WHERE id = $1', id)
     .then(function(data){
       res.status(200)
-      .json({
+      .render({
         status: 'success',
-        data: data,
-        message: 'Onecharacter was retrieved'
+        data: data
       });
     })
     .catch(function(err){
@@ -28,11 +27,9 @@ getAllCharacters = (req,res,next)  => {
    db.any('SELECT * FROM posts')
   .then(function(data){
     res.status(200)
-    .json({
+    .render({
       status: 'success',
-      data: data,
-      message: 'All characters were retrieved'
-    });
+      data: data    });
   })
   .catch(function(err){
     return next(err);

@@ -1,0 +1,90 @@
+body {
+	margin: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+#background {
+position: relative;
+z-index: -4;
+width: 100%;
+}
+
+.wrapper {
+	position: absolute;
+	top: 10%;
+	left: 25%;
+	background-color: #30B4E5;
+	border: 4px solid gray;
+	border-radius: 4px;
+	text-align: center;
+	opacity: .4;
+	width: 50%;
+	box-shadow: 8px 8px 5px gold;
+}
+
+.wrapper:hover {
+	width: 50%;
+	background-color: #30B4E5;
+	border: 4px solid gray;
+	border-radius: 4px;
+	opacity: .8;
+}
+
+.ask {
+	color: red;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bolder;
+}
+
+
+
+.makeChoice {
+	color: purple;
+	font-size: 24px;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+
+.advance {
+	padding: 6px 20px 6px 20px;
+	background-color: gold;
+    border: 5% black;
+    border-radius: 7px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+  	font-weight: bolder;
+  	box-shadow: 4px 4px 4px black;
+  	border: none;
+}
+
+.advance:hover {
+font-size: 22px;
+color: deeppink;
+background-color: #E5D230;
+}
+
+.nav-wrapper {
+	background-color: gold;
+	margin-top: -1%;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 24px;
+	padding-right: 160px;
+	padding-left: 160px;
+}
+
+a:hover {
+	color: #30B4E5;
+}
+

@@ -1,0 +1,21 @@
+body {
+	margin: 0;
+}
+
+.nav-wrapper {
+	background-color: gold;
+	margin-top: -1%;
+}
+
+
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 24px;
+	padding-right: 160px;
+	padding-left: 160px;
+}
+
+a:hover {
+	color: #30B4E5;
+}

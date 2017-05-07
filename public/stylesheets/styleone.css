@@ -1,10 +1,27 @@
 body {
 	margin: 0;
 	position: relative;
+	background-color: deeppink;
 }
 
 ul {
 	list-style-type: none;
+}
+
+#background {
+position: fixed;
+z-index: -4;
+width: 100%;
+}
+
+#logo {
+	position: fixed;
+	top: 0%;
+	font-size: 44px;
+	z-index: -1;
+	text-align: center;
+	padding-right: 274px;
+	padding-left: 274px;
 }
 
 .sub {
@@ -14,7 +31,8 @@ ul {
 }
 
 .noted:hover {
-	box-shadow: 8px 8px 5px #888888;
+	box-shadow: 8px 8px 5px black;
+	opacity: .8;
 }
 
 #forming {
@@ -24,6 +42,12 @@ ul {
 	border-radius: 10px;
 	text-align: center;
 	margin-left: 30%;
+	opacity: .3;
+}
+
+#forming:hover {
+	box-shadow: 8px 8px 5px deeppink;
+	opacity: .8;
 }
 
 .noted {
@@ -35,13 +59,14 @@ ul {
 	display: inline-flex;
 	flex-direction: row;
 	text-align: center;
+	opacity: .3;
 }
 
 .edit{
 	display: inline-flex;
 	margin-right: 14%;
 	padding: 6px 20px 6px 20px;
-	background-color: #5D4B5C;
+	background-color: gray;
     border: 5% black;
     border-radius: 7px;
     color: #EEDAEC;
@@ -53,11 +78,21 @@ ul {
   	border: none;
 }
 
+.edit:hover {
+	background-color: #A096A5;
+	color: black;
+}
+
+.delete:hover {
+	background-color: #A096A5;
+	color: red;
+}
+
 .delete{
 	display: inline-flex;
 	margin-left: 14%;
 	padding: 6px 10px 6px 10px;
-	background-color: #5D4B5C;
+	background-color: gray;
     border: 5% black;
     border-radius: 7px;
     color: #EEDAEC;
@@ -72,4 +107,22 @@ ul {
 input::placeholder {
 	color: deeppink;
 	text-align: center;
+}
+
+.nav-wrapper {
+	background-color: deeppink;
+	margin-top: -1%;
+}
+
+
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 24px;
+	padding-right: 160px;
+	padding-left: 160px;
+}
+
+a:hover {
+	color: black;
 }
