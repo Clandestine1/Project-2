@@ -1,17 +1,22 @@
 var express = require('express');
 var router = express.Router();
-var app = require('express')();
-var http = require('http').Server(app);
-var io = require('socket.io')(http);
+var _ = require('lodash');
 var db = require('../db/queries');
 
-app.get('/chat', function(req, res){
-  res.sendFile(__dirname + '/chat.html');
+router.get('/chat', function(req, res, next){
+  res.render('chat');
 });
 
+module.exports = function(io) {
+    var app = require('express');
+    var router = app.Router();
 
+    io.on('connection', function(socket) { 
+       
+    });
 
-
+    return router;
+}
 
 io.on('connection', function(socket){
   socket.on('chat', function(msg){
@@ -19,9 +24,9 @@ io.on('connection', function(socket){
   });
 });
 
-http.listen(7000, function(){
-	console.log('listening on *:7000');
-});
+/*http.listen(4000, function(){
+	console.log('listening on *:4000');
+});*/
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -32,6 +37,13 @@ router.get('/trivia', function(req, res, next){
 	res.render('trivia')
 });
 
+router.get('/about', function(req, res, next){
+	res.render('about')
+});
+
+router.get('/people', function(req, res, next){
+	res.json('people')
+});
 
 router.get('/people/:id', db.getOneCharacter);
 router.get('/people', db.getAllCharacters);
