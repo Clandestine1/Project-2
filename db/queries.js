@@ -2,9 +2,9 @@ var promise = require('bluebird');
 var options = { promiseLib: promise };
 
 var pgp = require('pg-promise')(options);
-var connString = 'postgres://localhost:5432/posts_db';
+var connString = 'postgress://clandestine1@localhost:5432/posts_db';
 
-var db = pgp(connString);
+var db = pgp(process.env.DATABASE_URL || connString);
 
 getOneCharacter = (req,res,next) => {
   var id = req.params.id;

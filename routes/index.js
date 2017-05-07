@@ -37,14 +37,14 @@ router.get('/trivia', function(req, res, next){
 	res.render('trivia')
 });
 
-router.get('/about', function(req, res, next){
-	res.render('about')
+router.get('/people', function(req, res, next){
+	res.render('people')
 });
 
 
 
-router.get('/people/:id', db.getOneCharacter);
-router.get('/people', db.getAllCharacters);
+router.get('/test/:id', db.getOneCharacter);
+router.get('/test', db.getAllCharacters);
 router.get('/notes', db.getAllContacts);
 router.post('/notes', db.createContact);
 router.delete('/notes/:id', db.removeContact)
