@@ -34,6 +34,7 @@ This web app was made to be the best source for all information on Danganronpa.
 - After MVP: Use javascript functions and dom mainpulation in order to make a Danganronpa trivia game
 
 #### Visual Representation of Database
+--
 
 ![](public/images/ERG.png)
 
