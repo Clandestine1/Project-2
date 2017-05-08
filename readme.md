@@ -1,8 +1,9 @@
 # Danganronpa Source
 -------
-#### ダンガンロンパ ソース
+[Live App Here](https://bossshauna.herokuapp.com/) 
 
 ###### Shauna Walker
+
 
 #### About
 --
@@ -31,6 +32,10 @@ This web app was made to be the best source for all information on Danganronpa.
 - Make sure database works after being deployed to heroku
 - After MVP: Incorporate socket.io as a framwork to have a live chat room in the app
 - After MVP: Use javascript functions and dom mainpulation in order to make a Danganronpa trivia game
+
+#### Visual Representation of Database
+
+![](public/images/ERG.png)
 
 #### Wireframes
 --
@@ -66,6 +71,7 @@ This is the notes page. Users will be able to interact with others create, read,
 2. In your terminal, cd to the newly cloned of downloaded folder. Install Dotenv, Pg-promise, Node.js, Express.js, Bluebird, Nodemon, PostgreseSQL and Helmet. All of which can be found at [here](https://www.npmjs.com/)
 3. While still in terminal cd to the db folder which contains the schema file for SQL. Type command createdb posts_db; which is what my schema database is called
 4. Enter psql -d posts_db -f schema.sql to successfully seed the database
-5. Now the app is ready to be deployed on your localhost:4000! 
+5. Now the app is ready to be deployed on your localhost:4000!
+
 
 
