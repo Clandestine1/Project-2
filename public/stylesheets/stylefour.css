@@ -92,10 +92,25 @@ right: 11%;
 bottom: 10%;
 }
 
+h2 {
+	background-color: pink;
+	opacity: .4;
+	text-align: center;
+}
+
+h2:hover {
+	opacity: .9;
+	color: black;
+}
+
+#about {
+	display: none;
+	color: #9385F4;
+}
+
 p {
 	display: none;
-	color: 
-	#9385F4;
+	color: #9385F4;
 }
 .pic {
 	position: relative;

@@ -1,11 +1,19 @@
 var express = require('express');
 var router = express.Router();
-var _ = require('lodash');
+var dr = require('../models/dr');
 var db = require('../db/queries');
 
 router.get('/chat', function(req, res, next){
   res.render('chat');
 });
+
+
+router.get('/char', function(req, res, next) {
+	var jpost = JSON.stringify(dr);
+  res.render('char', {dr:jpost});
+
+})
+
 
 /*module.exports = function(io) {
     var app = require('express');

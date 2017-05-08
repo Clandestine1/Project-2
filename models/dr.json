@@ -1,8 +1,9 @@
 [{
   "id": 1,
   "name": "Kyoko Kirigiri 霧切 響子",
+  "nickname": "Kuudere",
   "birthday": "October 6th",
-  "game": "Danganronpa 1",
+  "game": "Danganronpa Trigger Happy Havoc",
   "image": "http://i.imgur.com/FN7P6wq.png",
   "talent": "Ultimate Detective",
   "quote": "Fear is proof that your imagination is functioning. Frankly, I feel bad for anyone who can't feel fear. Without imagination, you can never deduce which action to take next",
@@ -11,8 +12,9 @@
 }, {
   "id": 2,
   "name": "Byakuya Togami 十神 白夜",
+  "nickname": "Douche",
   "birthday": "May 5th",
-  "game": "Danganronpa 1",
+  "game": "Danganronpa Trigger Happy Havoc",
   "image": "http://i.imgur.com/AoBcZU1.png",
   "talent": "Ultimate Affluent Progeny",
   "quote": "Hello there. Listen... who are you again? I apologize for my poor memory. But it’s just so hard to remember things I don't care about.",
@@ -21,8 +23,9 @@
 }, {
   "id": 3,
   "name": "Chihiro Fujisaki 不二咲 千尋",
+  "nickname": "Trap",
   "birthday": "March 14th",
-  "game": "Danganronpa 1",
+  "game": "Danganronpa Trigger Happy Havoc",
   "image": "http://i.imgur.com/QiFmwuy.png",
   "talent": "Ultimate Programmer",
   "quote": "I'm completely useless without a computer in front of me...",
@@ -31,8 +34,9 @@
 }, {
   "id": 4,
   "name": "Celestia Ludenberg ルーデンベルク",
+  "nickname": "Poser",
   "birthday": "November 23rd",
-  "game": "Danganronpa 1",
+  "game": "Danganronpa Trigger Happy Havoc",
   "image": "http://i.imgur.com/3JUkXNw.png",
   "talent": "Ultimate Gambler",
   "quote": "I'm rather proud of my ability to tell lies. I can trick not only others, but even my own heart.",
@@ -41,7 +45,9 @@
 }, {
   "id": 5,
   "name": "Monokuma モノクマ",
+  "nickname": "Annoying",
   "birthday": "Unknown",
+  "game": "Danganronpa Trigger Happy Havoc",
   "image": "http://i.imgur.com/WSMQtU0.png",
   "talent": "Unknown",
   "quote": "As long as there's despair in people's hearts, Monokuma will always come back!",
@@ -50,7 +56,9 @@
 }, {
   "id": 6,
   "name": "Makoto Naegi 苗木 誠",
+  "nickname": "Boring",
   "birthday": "February 5th",
+  "game": "Danganronpa Trigger Happy Havoc",
   "image": "http://i.imgur.com/unsPH8K.png",
   "talent": "Ultimate Lucky Student",
   "quote": "After all, my only redeeming quality is my optimism.",
@@ -59,7 +67,9 @@
 }, {
   "id": 7,
   "name": "Aoi Asahina 朝日奈 葵",
+  "nickname": "Glutton",
   "birthday": "April 24th",
+  "game": "Danganronpa Trigger Happy Havoc",
   "image": "http://i.imgur.com/k4FIaA5.png",
   "talent": "Ultimate Swimming Pro ",
   "quote": "People talk behind my back sometimes-say all my energy goes to my legs and none of it to my head.",
@@ -68,7 +78,9 @@
 }, {
   "id": 8,
   "name": "Yasuhiro Hagakure 葉隠 康比呂",
+  "nickname": "Chump",
   "birthday": "July 25th",
+  "game": "Danganronpa Trigger Happy Havoc",
   "image": "http://i.imgur.com/ipVm5Qw.png",
   "talent": "Ultimate Clairvoyant",
   "quote": "The guardian spirit with a perm head chasing a Bigfoot who was cursed by sky fish. That’s your very own guardian spirit!",
@@ -77,7 +89,9 @@
 }, {
   "id": 9,
   "name": "Sakura Ogami 大神 さくら",
+  "nickname": "Brolic",
   "birthday": "September 13th",
+  "game": "Danganronpa Trigger Happy Havoc",
   "image": "http://i.imgur.com/JfKLOc5.png",
   "talent": "Ultimate Martial Artist",
   "quote": "I don't want to just be the best in competitions. I want to be the strongest human on Earth",
@@ -86,7 +100,9 @@
 }, {
   "id": 10,
   "name": "Hifumi Yamada 山田 一二三",
+  "nickname": "Pervert",
   "birthday": "December 31st",
+  "game": "Danganronpa Trigger Happy Havoc",
   "image": "http://i.imgur.com/TGqEWbm.png",
   "talent": "Ultimate Fanfic Creator",
   "quote": "Listen to me! Outward appearances are meaningless! What you see before your eyes is nothing but the skin that wraps my true self! My meaning and worth can be judged only by the contents of my work!",
@@ -95,7 +111,9 @@
 }, {
   "id": 11,
   "name": "Junko Enoshima 江ノ島 盾子",
+  "nickname": "Psycho",
   "birthday": "December 24th",
+  "game": "Danganronpa Trigger Happy Havoc",
   "image": "http://i.imgur.com/UDtSoMq.png",
   "talent": "Ultimate Fashionista",
   "quote": "The heart-racing excitement of messy despair has a taste like you've never known!",
@@ -104,7 +122,9 @@
 }, {
   "id": 12,
   "name": "Kiyotaka Ishimaru 石丸 清多夏",
+  "nickname": "Perfect Prefect",
   "birthday": "August 31st",
+  "game": "Danganronpa Trigger Happy Havoc",
   "image": "http://i.imgur.com/rIN9Lyz.png",
   "talent": "Ultimate Moral Compass",
   "quote": "Also, I have ten sets of my uniform, so I always have a clean one. There's nothing strange about that.",
@@ -113,7 +133,9 @@
 }, {
   "id": 13,
   "name": "Leon Kuwata 桑田 怜恩",
+  "nickname": "Souless",
   "birthday": "January 3rd",
+  "game": "Danganronpa Trigger Happy Havoc",
   "image": "http://i.imgur.com/hMoHVt4.png",
   "talent": "Ultimate Baseball Star",
   "quote": "My plan is to conquer the world with punk! Cause I mean... when it comes to punk, it doesn't really matter if you can actually play or not",
@@ -122,7 +144,9 @@
 }, {
   "id": 14,
   "name": "Mondo Owada 大和田 紋土",
+  "nickname": "Baddy",
   "birthday": "June 9th",
+  "game": "Danganronpa Trigger Happy Havoc",
   "image": "http://i.imgur.com/6FkxgpM.png",
   "talent": "Ultimate Biker Gang Leader ",
   "quote": "A real man rides Kawasaki, okay? That's what I ride. You oughta see it, man. The v-twin’s got that monster power, it's like you're dancin'. Course, it ain't for just anyone. You gotta have the skill to handle it.",
@@ -131,7 +155,9 @@
 }, {
   "id": 15,
   "name": "Sayaka Maizono 舞園 さやか",
+  "nickname": "Hime",
   "birthday": "July 7th",
+  "game": "Danganronpa Trigger Happy Havoc",
   "image": "http://i.imgur.com/BQsAti5.png",
   "talent": "Ultimate Pop Sensation",
   "quote": "I can read minds... Relax, it's a joke. I just have good intuition. Cause I'm psychic! ...Kidding!",
@@ -140,7 +166,9 @@
 }, {
   "id": 16,
   "name": "Toko Fukawa 腐川 冬子 ",
+  "nickname": "Bipolar",
   "birthday": "March 3rd",
+  "game": "Danganronpa Trigger Happy Havoc",
   "image": "http://i.imgur.com/cZTOwT7.png",
   "talent": "Ultimate Writing Prodigy",
   "quote": "Nng... I'm blind! Your s-straightforward nature blinded me!",
@@ -149,7 +177,9 @@
 }, {
   "id": 17,
   "name": "Mukuro Ikusaba 戦刃 むくろ",
+  "nickname": "Unknown",
   "birthday": "December 24th",
+  "game": "Danganronpa Trigger Happy Havoc",
   "image": "http://i.imgur.com/63Bow5B.png",
   "talent": "Ultimate Soldier",
   "quote": "  Junko, you're all I have. So don't worry, little sis. I'm always looking at you, so... I swear I'm going to make you despair. I swear I'll make Makoto and everyone else happy. So when you find joy in that despair, I'll trust in Makoto's hope and bring my eyes back to you",
@@ -158,7 +188,9 @@
 }, {
   "id": 18,
   "name": "Usami ウサミ",
+  "nickname": "Energizer",
   "birthday": "Unknown",
+  "game": "Danganronpa Goodbye Despair",
   "image": "http://i.imgur.com/qY5InlK.png",
   "talent": "Unknown",
   "quote": "I'm Usami! Magical Miracle Girl ★ Usami! I'm an itty bitty girl who's sweet like milk!",
@@ -167,7 +199,9 @@
 }, {
   "id": 19,
   "name": "Hajime Hinata 日向 創",
+  "nickname": "Rebel",
   "birthday": "January 1st",
+  "game": "Danganronpa Goodbye Despair",
   "image": "http://i.imgur.com/ubp9072.png",
   "talent": "Ultimate Hope",
   "quote": "Nagito Komaeda... You're definitely someone I shouldn't underestimate.",
@@ -176,7 +210,9 @@
 }, {
   "id": 20,
   "name": "Nagito Komaeda 狛枝 凪斗",
+  "nickname": "Crazy",
   "birthday": "April 28th",
+  "game": "Danganronpa Goodbye Despair",
   "image": "http://i.imgur.com/t8j3kDx.png",
   "talent": "Ultimate Lucky Student",
   "quote": "Despair is... like what I am compared to all of you, something minuscule, trivial and worthless!",
@@ -185,7 +221,9 @@
 }, {
   "id": 21,
   "name": "Chiaki Nanami 七海 千秋",
+  "nickname": "Shauna",
   "birthday": "March 14th",
+  "game": "Danganronpa Goodbye Despair",
   "image": "http://i.imgur.com/nqOHMBw.png",
   "talent": "Ultimate Gamer",
   "quote": "It doesn't make a difference whether or not you have talent. I mean, that isn't the end goal. You have greater freedom than we do. All I have are games, but you can go anywhere and become anything.",
@@ -194,7 +232,9 @@
 }, {
   "id": 22,
   "name": "Fuyuhiko Kuzuryu 九頭龍 冬彦",
+  "nickname": "Overcompensater",
   "birthday": "August 16th",
+  "game": "Danganronpa Goodbye Despair",
   "image": "http://i.imgur.com/tqEdKXO.png",
   "talent": "Ultimate Yakuza",
   "quote": "I never needed... a sword...or a shield... I never needed... a tool... S-So... You didn't...need to become a tool... You just...you just needed to be yourself...",
@@ -203,7 +243,9 @@
 }, {
   "id": 23,
   "name": "Ibuki Mioda 澪田 唯吹",
+  "nickname": "Rockstar",
   "birthday": "November 27th",
+  "game": "Danganronpa Goodbye Despair",
   "image": "http://i.imgur.com/qjmiaYs.png",
   "talent": "Ultimate Musician",
   "quote": "I believe finding yourself means accepting that you're someone who is constantly changing",
@@ -212,7 +254,9 @@
 }, {
   "id": 24,
   "name": "Sonia Nevermind ソニア・ネヴァーマインド",
+  "nickname": "Blonde",
   "birthday": "October 13th",
+  "game": "Danganronpa Goodbye Despair",
   "image": "http://i.imgur.com/TfQlzLF.png",
   "talent": "Ultimate Princess",
   "quote": "You wear a white shirt just like the legend says, and your hair looks like an antenna! And your face...is completely unremarkable!",
@@ -221,7 +265,9 @@
 }, {
   "id": 25,
   "name": "Gundham Tanaka 田中 眼蛇夢",
+  "nickname": "Chuunibyou",
   "birthday": "December 14th",
+  "game": "Danganronpa Goodbye Despair",
   "image": "http://i.imgur.com/o1y2vdY.png",
   "talent": "Ultimate Breeder",
   "quote": "There are no second chances in life... We cannot return to what has already transpired...",
@@ -230,7 +276,9 @@
 }, {
   "id": 26,
   "name": "Hiyoko Saionji 西園寺 日寄子",
+  "nickname": "Bratty",
   "birthday": "March 9th",
+  "game": "Danganronpa Goodbye Despair",
   "image": "http://i.imgur.com/9eou4ay.png",
   "talent": "Ultimate Traditional Dancer",
   "quote": "Hey, isn't it stressful when someone you're not interested in at all tries to talk to you?",
@@ -239,7 +287,9 @@
 }, {
   "id": 27,
   "name": "Akane Owari 終里 赤音",
+  "nickname": "Beast",
   "birthday": "July 15th",
+  "game": "Danganronpa Goodbye Despair",
   "image": "http://i.imgur.com/DcVGu3s.png",
   "talent": "Ultimate Gymnast",
   "quote": "When things don't make sense, the only thing I can do is stuff my face!",
@@ -248,7 +298,9 @@
 }, {
   "id": 28,
   "name": "Unknown 詐欺師",
+  "nickname": "Chameleon",
   "birthday": "Unknown",
+  "game": "Danganronpa Goodbye Despair",
   "image": "http://i.imgur.com/5ClbcdN.png",
   "talent": "Ultimate Imposter",
   "quote": "Throw away your past self... It's meaningless",
@@ -257,7 +309,9 @@
 }, {
   "id": 29,
   "name": "Nekomaru Nidai 大 猫丸",
+  "nickname": "Metal Lee",
   "birthday": "February 22nd",
+  "game": "Danganronpa Goodbye Despair",
   "image": "http://i.imgur.com/1rYQd5U.png",
   "talent": "Ultimate Team Manager",
   "quote": "Countless records in this world would not exist without managers!",
@@ -266,7 +320,9 @@
 }, {
   "id": 30,
   "name": "Kazuichi Soda 左右田 和一",
+  "nickname": "Chompy",
   "birthday": "June 29th",
+  "game": "Danganronpa Goodbye Despair",
   "image": "http://i.imgur.com/g91lX3b.png",
   "talent": "Ultimate Mechanic",
   "quote": "You'd be surprised how much changes when you change your appearance.",
@@ -275,7 +331,9 @@
 }, {
   "id": 31,
   "name": "Mahiru Koizumi 小泉 真昼 ",
+  "nickname": "Plain Jane",
   "birthday": "April 24th",
+  "game": "Danganronpa Goodbye Despair",
   "image": "http://i.imgur.com/u9dkLuF.png",
   "talent": "Ultimate Photographer",
   "quote": "Well, I regret to inform that you are hereby branded 'Hajime the unreliable.' I expect you to work hard to shake that title off. Act more like a man!",
@@ -284,7 +342,9 @@
 }, {
   "id": 32,
   "name": "Mikan Tsumiki 罪木 蜜柑",
+  "nickname": "Submissive",
   "birthday": "May 12th",
+  "game": "Danganronpa Goodbye Despair",
   "image": "http://i.imgur.com/FqyhTyx.png",
   "talent": "Ultimate Nurse",
   "quote": "U-Um... Other than dying, I can pretty much do anything! Please order me around whenever you want!",
@@ -293,7 +353,9 @@
 }, {
   "id": 33,
   "name": "Peko Pekoyama 辺古山 ペコ",
+  "nickname": "Power Ranger",
   "birthday": "June 30th",
+  "game": "Danganronpa Goodbye Despair",
   "image": "http://i.imgur.com/nWAFwim.png",
   "talent": "Ultimate Swordswoman",
   "quote": "All animals can sense my menacing presence and run away from me. I just...want to touch their soft fur and fluffy feathers to my heart's content...",
@@ -302,7 +364,9 @@
 }, {
   "id": 34,
   "name": "Teruteru Hanamura 花村 輝々",
+  "nickname": "Ecchi",
   "birthday": "September 2nd",
+  "game": "Danganronpa Goodbye Despair",
   "image": "http://i.imgur.com/jVDa8kt.png",
   "talent": "Ultimate Cook",
   "quote": "A dirty tale of hardship like that doesn't suit an attractive urbanite like me!",
@@ -311,7 +375,9 @@
 }, {
   "id": 35,
   "name": "Komaru Naegi 苗木 こまる",
+  "nickname": "Ahoge",
   "birthday": "May 31",
+  "game": "Danganronpa Another Episode",
   "image": "http://i.imgur.com/m0Tiw38.png",
   "talent": "Unknown",
   "quote": "I'm a high school girl and I have a hacking gun, so does this situation seem like an otaku's doing?",
@@ -320,7 +386,9 @@
 }, {
   "id": 36,
   "name": "Servant 廝",
+  "nickname": "Best Character",
   "birthday": "April 28th",
+  "game": "Danganronpa Another Episode",
   "image": "http://i.imgur.com/TkoYa4M.png",
   "talent": "Unknown",
   "quote": "The deeper and darker the despair... the brighter and powerful the hope born from it",
@@ -329,7 +397,9 @@
 }, {
   "id": 37,
   "name": "Nagisa Shingetsu 新月 渚",
+  "nickname": "Suspenders",
   "birthday": "October 23rd",
+  "game": "Danganronpa Another Episode",
   "image": "http://i.imgur.com/bzLnBzn.png",
   "talent": "Li'l Ultimate Social Studies",
   "quote": "You're repeating 'leader' too much. A real leader would be more composed.",
@@ -338,7 +408,9 @@
 }, {
   "id": 38,
   "name": "Masaru Daimon 大門 大",
+  "nickname": "Runt",
   "birthday": "May 7th",
+  "game": "Danganronpa Another Episode",
   "image": "http://i.imgur.com/3zDsboe.png",
   "talent": "Li'l Ultimate P.E.",
   "quote": "I'm not like those adults who call themselves leaders but hide like cowards!",
@@ -347,7 +419,9 @@
 }, {
   "id": 40,
   "name": "Kotoko Utsugi 空木 言子",
+  "nickname": "Girly",
   "birthday": "June 13th",
+  "game": "Danganronpa Another Episode",
   "image": "http://i.imgur.com/zJkpNCo.png",
   "talent": "Li'l Ultimate Drama",
   "quote": "Being adorbs isn't always a good thing. Cute girls go through terrible things...",
@@ -356,7 +430,9 @@
 }, {
   "id": 41,
   "name": "Jataro Kemuri 煙 蛇太郎",
+  "nickname": "Ugly",
   "birthday": "February 29th",
+  "game": "Danganronpa Another Episode",
   "image": "http://i.imgur.com/1n9Xh4u.png",
   "talent": "Li'l Ultimate Art",
   "quote": "Games aren't the same as real life. In that case... even someone as hated me as me could win.",
@@ -365,7 +441,9 @@
 }, {
   "id": 42,
   "name": "Monaca Towa 塔和 最中 ",
+  "nickname": "Fake Boss",
   "birthday": "April 1st",
+  "game": "Danganronpa Another Episode",
   "image": "http://i.imgur.com/hS3J6JV.png",
   "talent": "Li'l Ultimate Homeroom",
   "quote": "Nnn... like— I— said—! Why— don't— you— get— it—! That's— how— it— is—! If Monaca— says— so—! Then— it's— so—!",
@@ -374,7 +452,9 @@
 }, {
   "id": 43,
   "name": "Izuru Kamukura カムクラ イズル",
+  "nickname": "Unkempt",
   "birthday": "January 1st",
+  "game": "Danganronpa Another Episode",
   "image": "http://i.imgur.com/7NxnPrU.png",
   "talent": "Ultimate Hope",
   "quote": "I want to test something. Hope and Despair... Which will be harder for me to predict?",
@@ -383,7 +463,9 @@
 }, {
   "id": 44,
   "name": "Haiji Towa 塔和 灰慈",
+  "nickname": "Pedo",
   "birthday": "August 9th",
+  "game": "Danganronpa Another Episode",
   "image": "http://i.imgur.com/ugaY6hB.png",
   "talent": "Unknown",
   "quote": "As if I would. And also... If I were to do it with anyone, it would be Komaru Naegi. I'm a lolicon, so the younger, the better.",
@@ -392,7 +474,9 @@
 }, {
   "id": 45,
   "name": "Hiroko Hagakure 葉隠 浩子",
+  "nickname": "Cougar",
   "birthday": "July 5th",
+  "game": "Danganronpa Another Episode",
   "image": "http://i.imgur.com/nwhTLXY.png",
   "talent": "Unknown",
   "quote": "All boys really want to do is act cool in front of girls.",
@@ -401,7 +485,9 @@
 }, {
   "id": 46,
   "name": "Shirokuma シロクマ",
+  "nickname": "Fake",
   "birthday": "Unknown",
+  "game": "Danganronpa Another Episode",
   "image": "http://i.imgur.com/GvAoTj7.png",
   "talent": "Unknown",
   "quote": "I'm a nice bear! The kind of bear who would give my opponent the corner in Othello...",
@@ -410,7 +496,9 @@
 }, {
   "id": 47,
   "name": "Kurokuma クロクマ ",
+  "nickname": "Idiot Savant",
   "birthday": "Unknown",
+  "game": "Danganronpa Another Episode",
   "image": "http://i.imgur.com/Zv7wNfG.png",
   "talent": "Unknown",
   "quote": "Oh, what!? Is this it!? You're finally gonna come out of the closet!?",

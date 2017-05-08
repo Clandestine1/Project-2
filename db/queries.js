@@ -27,7 +27,7 @@ getAllCharacters = (req,res,next)  => {
    db.any('SELECT * FROM posts')
   .then(function(data){
     res.status(200)
-    .json({
+    .render({
       status: 'success',
       data: data    });
   })
