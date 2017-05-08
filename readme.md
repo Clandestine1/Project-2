@@ -37,6 +37,23 @@ This web app was made to be the best source for all information on Danganronpa.
 
 ![](public/images/ERG.png)
 
+#### Code Example
+This is a code excerpt from my Danganronpa API
+``` 
+ {
+  "id": 16,
+  "name": "Toko Fukawa 腐川 冬子 ",
+  "nickname": "Bipolar",
+  "birthday": "March 3rd",
+  "game": "Danganronpa Trigger Happy Havoc",
+  "image": "http://i.imgur.com/cZTOwT7.png",
+  "talent": "Ultimate Writing Prodigy",
+  "quote": "Nng... I'm blind! Your s-straightforward nature blinded me!",
+  "likes": "Byakuya Togami and Belles-lettres novels",
+  "dislikes": "Light Novels and Manga"
+},
+```
+
 #### Wireframes
 
 This is the home page. It will display every character along with their name. Upon clicking a character portrait, the user will be taken to that character's unique id page which will display more information about the character
