@@ -88,6 +88,7 @@ This is the notes page. Users will be able to interact with others create, read,
 - Dotenv
 - Nodemon
 - Psql
+- Materialize
 - EJS
 
 #### Install Instructions
