@@ -4,6 +4,11 @@ body {
 	background-color: deeppink;
 }
 
+li {
+	color: blue;
+	font-family: cry;
+}
+
   @font-face {
   font-family: "grunge";
     src: url("../fonts/grunge.ttf")
@@ -21,6 +26,12 @@ body {
 
 ul {
 	list-style-type: none;
+}
+
+.main {
+	width: 100%;
+	position: relative;
+	height: 50%;
 }
 
 #background {
@@ -68,12 +79,54 @@ a:hover {
 opacity: .8;
 }
 
+#c {
+	position: absolute;
+	bottom: 1.4%;
+	left: 50%;
+}
+
+.col4 {
+	border-radius: 8px;
+	border: 4px black solid;
+	background-color: lightgray;
+	width: 46.4%;
+	padding-bottom: 28%;
+	opacity: .4;
+	margin-right: 15px;
+	margin-left: 15px;
+	margin-top: 2%;
+	font-family: grunge;
+	text-shadow: 1px 1px deeppink;
+	font-size: 26px;
+	text-align: center;
+	position: relative;
+	display: none;
+}
+
+.col4:hover {
+opacity: .9;
+}
+
+#one {
+	position: absolute;
+	right: 10%;
+	width: 84%;
+	top: 48%;
+}
+
+#two {
+	position: absolute;
+	left: 6%;
+	width: 84%;
+	top: 47%;
+}
+
 #icon {
 width: 10%;
 position: absolute;
 z-index: 1;
 right: 45%;
-bottom: 10%;
+bottom: 20%;
 }
 
 #icon1{
@@ -81,7 +134,7 @@ width: 10%;
 position: absolute;
 z-index: 1;
 right: 78%;
-bottom: 10%;
+bottom: 20%;
 }
 
 #icon2 {
@@ -89,16 +142,31 @@ width: 10%;
 position: absolute;
 z-index: 1;
 right: 11%;
-bottom: 10%;
+bottom: 20%;
 }
 
 h2 {
 	background-color: pink;
 	opacity: .4;
 	text-align: center;
+	font-family: grunge;
 }
 
 h2:hover {
+	opacity: .9;
+	color: black;
+}
+
+
+h1 {
+	background-color: pink;
+	opacity: .4;
+	text-align: center;
+	color: blue;
+	font-family: grunge;
+}
+
+h1:hover {
 	opacity: .9;
 	color: black;
 }

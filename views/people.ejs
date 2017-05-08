@@ -42,14 +42,32 @@
       <p><img class="pic" src="./images/dr8.gif"></p>
       </div>
     </div>
+<h1>Characters</h1>
 
-     <% dr.forEach(function(d){ %>
-    <li>
-    <a href="/dr/<%=d.item%>/<%=d.id %>">
-    <%= d.item %>
-    </a>
-    </li>
-  <% }); %>
+<div class="row">
+      <div id="n" class="col4">
+      <img class="main" src="./images/dr9.gif"><br>
+      <ul id="one">
+      <li><b>Name:</b> Nagito Komaeda</li>
+      <li><b>Birthday:</b> April 28th</li>
+      <li><b>Talent:</b> Ultimate Lucky Student</li>
+      <li><b>Quote:</b> Despair is... like what I am compared to all of you, something minuscule, trivial and worthless! </li>
+      <li><b>Likes:</b> Beautiful things and People</li>
+      <li><b>Dislikes:</b> Noisy Places and Ugly People</li>
+      </ul>
+      </div>
+
+      <div id="c" class="col4">
+      <img class="main" src="./images/dr10.gif"><br>
+      <ul id="two">
+      <li><b>Name:</b> Chiaki Nanami</li>
+      <li><b>Birthday:</b> March 14th</li>
+      <li><b>Talent:</b> Ultimate Gamer</li>
+      <li><b>Quote:</b> It doesn't make a difference whether or not you have talent. I mean, that isn't the end goal. You have greater freedom than we do. All I have are games, but you can go anywhere and become anything. </li>
+      <li><b>Likes:</b> Games</li>
+      <li><b>Dislikes:</b> Alarm Clocks</li>
+      </ul>
+      </div>  
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>     
 <script>
@@ -59,6 +77,9 @@ $(document).ready(function(){
     });
     $("h2").click(function(){
         $("#about").toggle();
+    });
+     $("h1").click(function(){
+        $(".col4").toggle();
     });
 });
 
