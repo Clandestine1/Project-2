@@ -32,7 +32,7 @@
     
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    <script type="text/javascript">
 
 //Array of objects which hold trivia trivia, trivia answer choices and the correct answer
@@ -102,7 +102,7 @@ $(document).ready(function () {
                 }
 
                 oneQuestion++;
-
+                //Advances questions if there are questions left in trivia.length, otherwise retry
                 if (oneQuestion < trivia.length) {
                     displayoneQuestion();
                 } else {
@@ -125,7 +125,7 @@ $(document).ready(function () {
 
 
 function displayoneQuestion() {
-
+    // displays trivia componenets in wrapper div
     var ask = trivia[oneQuestion].ask;
     var askClass = $(document).find(".wrapper > .ask");
     var makeChoice = $(document).find(".wrapper > .makeChoice");
@@ -134,25 +134,25 @@ function displayoneQuestion() {
     $(askClass).text(ask);
 
     $(makeChoice).find("li").remove();
-
+    //Sets up choices in a list
     var choice;
     for (i = 0; i < shauna; i++) {
         choice = trivia[oneQuestion].choices[i];
         $('<li><input type="radio" value=' + i + ' name="radio" />' + choice + '</li>').appendTo(makeChoice);
     }
 }
-
+//Restarts the quiz
 function resetQuiz() {
     oneQuestion = 0;
     correct = 0;
     hiddenScores();
 }
-
+//Show scores at the end of the quiz
 function showScores() {
     $(document).find(".wrapper > .outcomes").text("Correct Answers: Nagito, Togami Corporation, Twilight Syndrome Murder Case, Monaca, Alter Ego, Ibuki, Ultimate Hope, Adults, Four, Mondo");
     $(document).find(".wrapper > .outcomes").show();
 }
-
+//Hides scores 
 function hiddenScores() {
     $(document).find(".outcomes").hide();
 }
@@ -163,6 +163,6 @@ function hiddenScores() {
 
    <audio autoplay>
     <source src="../music/musicdr2.mp3" type="audio/mp3">
-</audio>
+   </audio>
 
 </html>

@@ -1,0 +1,33 @@
+body {
+	margin: 0;
+}
+
+@font-face {
+  font-family: "wonderland";
+    src: url("../fonts/wonderland.ttf")
+}
+
+h1 {
+font-family: wonderland;
+font-size: 40px;
+color: red;
+position: absolute;
+left: 34%;
+top: 60%;
+text-shadow: 4px 3px deeppink;
+animation-name: bigger;
+    animation-duration: 1s;
+     -webkit-animation-duration: 1s;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease;
+}
+
+#background {
+	width: 100%;
+}
+
+@keyframes bigger {
+	0% {font size: 40px; animation-timing-function: ease-in-out;}
+	50% {font-size: 80px; animation-timing-function: ease-in-out;}
+	100% {font size: 40px; animation-timing-function: ease-in-out;}
+}

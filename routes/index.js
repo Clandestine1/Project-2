@@ -8,34 +8,6 @@ router.get('/chat', function(req, res, next){
 });
 
 
-router.get('/char', function(req, res, next) {
-	var jpost = JSON.stringify(dr);
-  res.render('char', {dr:jpost});
-
-})
-
-
-/*module.exports = function(io) {
-    var app = require('express');
-    var router = app.Router();
-
-    io.on('connection', function(socket) { 
-       
-    });
-
-    return router;
-}
-
-io.on('connection', function(socket){
-  socket.on('chat', function(msg){
-    io.emit('chat', msg);
-  });
-});
-
-/*http.listen(4000, function(){
-	console.log('listening on *:4000');
-});*/
-
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });

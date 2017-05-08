@@ -70,6 +70,11 @@ function removeContact(req, res, next) {
   db.result('delete from notes where id = $1', contactID)
 }
 
+/*axios.get('https://bossshauna.herokuapp.com/test/1')
+ .then(function(res){
+	console.log(res)
+});*/
+
 module.exports = {
   getOneCharacter: getOneCharacter,
   getAllCharacters: getAllCharacters,
