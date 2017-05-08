@@ -12,7 +12,7 @@ getOneCharacter = (req,res,next) => {
   db.one('SELECT * FROM posts WHERE id = $1', id)
     .then(function(data){
       res.status(200)
-      .render({
+      .json({
         status: 'success',
         data: data
       });
@@ -37,7 +37,7 @@ getAllCharacters = (req,res,next)  => {
 
 };
 
-function updateContact(req, res, next) {
+updateCharacter = (req, res, next) => {
 console.log(req.body)
   db.none('update notes set post=$1 where id=$2',
  [req.body.first, parseInt(req.params.id)])
@@ -46,7 +46,7 @@ console.log(req.body)
     })
 }
 
-function createContact(req, res, next) {
+  createCharacter = (req, res, next) => {
   console.log(req.body)
   db.none('insert into notes(name, game, post)' +
       'values(${name}, ${game}, ${post})',
@@ -56,7 +56,7 @@ function createContact(req, res, next) {
      });
 }
 
-function getAllContacts(req, res, next){
+ getAllCharacters = (req, res, next) => {
   db.any('select * from notes')
   .then(function(data){
     console.log(data)
@@ -64,22 +64,17 @@ function getAllContacts(req, res, next){
     })
 }
 
-function removeContact(req, res, next) {
-  console.log("inside removeContact", req.params.id)
-  let contactID = parseInt(req.params.id)
-  db.result('delete from notes where id = $1', contactID)
+  removeCharacter = (req, res, next) => {
+  console.log("inside removeCharacter", req.params.id)
+  let cID = parseInt(req.params.id)
+  db.result('delete from notes where id = $1', cID)
 }
-
-/*axios.get('https://bossshauna.herokuapp.com/test/1')
- .then(function(res){
-	console.log(res)
-});*/
 
 module.exports = {
   getOneCharacter: getOneCharacter,
   getAllCharacters: getAllCharacters,
-  createContact: createContact,
-  getAllContacts: getAllContacts,
-  removeContact: removeContact,
-  updateContact: updateContact
+  createCharacter: createCharacter,
+  getAllCharacters: getAllCharacters,
+  removeCharacter: removeCharacter,
+  updateCharacter: updateCharacter
 }

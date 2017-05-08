@@ -25,9 +25,9 @@ router.get('/people', function(req, res, next){
 
 router.get('/test/:id', db.getOneCharacter);
 router.get('/test', db.getAllCharacters);
-router.get('/notes', db.getAllContacts);
-router.post('/notes', db.createContact);
-router.delete('/notes/:id', db.removeContact)
-router.patch('/notes/:id', db.updateContact)
+router.get('/notes', db.getAllCharacters);
+router.post('/notes', db.createCharacter);
+router.delete('/notes/:id', db.removeCharacter);
+router.patch('/notes/:id', db.updateCharacter);
 
 module.exports = router;
