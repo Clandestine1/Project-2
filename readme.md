@@ -67,6 +67,14 @@ This is the notes page. Users will be able to interact with others create, read,
 
 [Link to Trello](https://trello.com/b/J0qGqmYl/project-2-danganronpa)
 
+#### Minimum Viable Product
+- Working CRUD features
+- Self made API that is linked to database
+- Fully seeded relational database
+- Custom NPM modules
+- App deployed to Heroku
+- Finished Readme 
+
 #### Technologies Used
 - Express.js
 - Node.js
