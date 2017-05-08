@@ -49,8 +49,58 @@ a:hover {
 
 .cols6 {
 	display: inline-flex;
-	justify-content: space-between;
+	border-radius: 8px;
+	border: 4px black solid;
 	background-color: lightgray;
 	width: 30%;
-	padding-bottom: 10%;
+	padding-bottom: 14%;
+	opacity: .4;
+	margin-right: 15px;
+	margin-left: 15px;
+	margin-top: 2%;
+	font-family: grunge;
+	text-shadow: 1px 1px deeppink;
+	font-size: 26px;
+	text-align: center;
+}
+
+.cols6:hover {
+opacity: .8;
+}
+
+#icon {
+width: 10%;
+position: absolute;
+z-index: 1;
+right: 45%;
+bottom: 10%;
+}
+
+#icon1{
+width: 10%;
+position: absolute;
+z-index: 1;
+right: 78%;
+bottom: 10%;
+}
+
+#icon2 {
+width: 10%;
+position: absolute;
+z-index: 1;
+right: 11%;
+bottom: 10%;
+}
+
+p {
+	display: none;
+	color: 
+	#9385F4;
+}
+.pic {
+	position: relative;
+	right: 44%;
+	top: 24%;
+	width: 348px;
+	height: 250px;
 }

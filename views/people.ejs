@@ -3,7 +3,7 @@
     <head>
     <link rel='stylesheet' href='/stylesheets/stylefour.css' />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.1/axios.js"></script>
-          
+    
 
   </head>
   <body>
@@ -11,7 +11,7 @@
    <nav>
     <div class="nav-wrapper">
       <div>
-        <a href="../about">Home</a>
+        <a href="../">Home</a>
         <a href="../people">Characters</a>
         <a href="../notes">Notes</a>
         <a href="../trivia">Trivia</a>
@@ -21,13 +21,34 @@
 
 <img id="background" src="./images/dr3.jpg">
 
-
 <div class="row">
-      <div class="cols6">Danganronpa Trigger Happy Havoc</div>
-      <div class="cols6">Danganronpa Goodbye Despair</div>
-      <div class="cols6">Danganronpa Another Episode</div>
+      <div class="cols6">Danganronpa Trigger Happy Havoc
+      <img id="icon" src="./images/icon.png"><br>
+      <p><img class="pic" src="./images/dr6.gif"></p>
+      </div>
+
+      <div class="cols6">Danganronpa Goodbye Despair
+      <img id="icon1" src="./images/icon.png"><br>
+      <p><img class="pic" src="./images/dr7.gif"></p>
+      </div>
+
+      <div class="cols6">Danganronpa Another Episode
+      <img id="icon2" src="./images/icon.png"><br>
+      <p><img class="pic" src="./images/dr8.gif"></p>
+      </div>
     </div>
-    
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>     
+<script>
+$(document).ready(function(){
+    $(".cols6").click(function(){
+        $("p").toggle();
+    });
+});
+
+
+</script>
+
   <audio autoplay>
     <source src="../music/musicdr4.mp3" type="audio/mp3">
 </audio>
